@@ -147,8 +147,12 @@ const ProductDetail = ({ productId }) => {
 
           <div className="product-detail-price">
             <span className="product-detail-current-price">${product.price}</span>
-            <span className="product-detail-original-price">${product.originalPrice}</span>
-            <span className="product-detail-discount">-{product.discount}%</span>
+            {product.originalPrice && (
+              <span className="product-detail-original-price">${product.originalPrice}</span>
+            )}
+            {product.discount && (
+              <span className="product-detail-discount">-{product.discount}%</span>
+            )}
           </div>
 
           <p className="product-detail-description">{product.description}</p>

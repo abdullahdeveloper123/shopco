@@ -2,7 +2,7 @@
   "newArrivals": [
     {
       "id": 1,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=T-Shirt",
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=295&h=298&fit=crop&crop=center",
       "title": "T-shirt with Tape Details",
       "rating": 4.5,
       "price": 120,
@@ -15,7 +15,7 @@
     },
     {
       "id": 2,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Jeans",
+      "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=295&h=298&fit=crop&crop=center",
       "title": "Skinny Fit Jeans",
       "rating": 3.5,
       "price": 240,
@@ -30,7 +30,7 @@
     },
     {
       "id": 3,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Shirt",
+      "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=295&h=298&fit=crop&crop=center",
       "title": "Checkered Shirt",
       "rating": 4.5,
       "price": 180,
@@ -43,7 +43,7 @@
     },
     {
       "id": 4,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Sleeve+Striped",
+      "image": "https://images.unsplash.com/photo-1583743814966-8936f37f4678?w=295&h=298&fit=crop&crop=center",
       "title": "Sleeve Striped T-shirt",
       "rating": 4.5,
       "price": 130,
@@ -58,7 +58,7 @@
     },
     {
       "id": 5,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Hoodie",
+      "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=295&h=298&fit=crop&crop=center",
       "title": "Courage Graphic T-shirt",
       "rating": 4.0,
       "price": 145,
@@ -71,7 +71,7 @@
     },
     {
       "id": 6,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Shorts",
+      "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=295&h=298&fit=crop&crop=center",
       "title": "Loose Fit Bermuda Shorts",
       "rating": 3.0,
       "price": 80,
@@ -84,7 +84,7 @@
     },
     {
       "id": 7,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Polo",
+      "image": "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?w=295&h=298&fit=crop&crop=center",
       "title": "Faded Skinny Jeans",
       "rating": 4.5,
       "price": 210,
@@ -97,7 +97,7 @@
     },
     {
       "id": 8,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Jacket",
+      "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=295&h=298&fit=crop&crop=center",
       "title": "Vertical Striped Shirt",
       "rating": 5.0,
       "price": 212,
@@ -114,7 +114,7 @@
   "topSelling": [
     {
       "id": 9,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Striped+Shirt",
+      "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=295&h=298&fit=crop&crop=center",
       "title": "Vertical Striped Shirt",
       "rating": 5.0,
       "price": 212,
@@ -129,7 +129,7 @@
     },
     {
       "id": 10,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Courage+Tee",
+      "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=295&h=298&fit=crop&crop=center",
       "title": "Courage Graphic T-shirt",
       "rating": 4.0,
       "price": 145,
@@ -142,7 +142,7 @@
     },
     {
       "id": 11,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Bermuda+Shorts",
+      "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=295&h=298&fit=crop&crop=center",
       "title": "Loose Fit Bermuda Shorts",
       "rating": 3.0,
       "price": 80,
@@ -155,7 +155,7 @@
     },
     {
       "id": 12,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Faded+Jeans",
+      "image": "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?w=295&h=298&fit=crop&crop=center",
       "title": "Faded Skinny Jeans",
       "rating": 4.5,
       "price": 210,
@@ -168,7 +168,7 @@
     },
     {
       "id": 13,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Polo+Shirt",
+      "image": "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=295&h=298&fit=crop&crop=center",
       "title": "Polo with Contrast Trims",
       "rating": 4.0,
       "price": 242,
@@ -183,7 +183,7 @@
     },
     {
       "id": 14,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Gradient+Tee",
+      "image": "https://images.unsplash.com/photo-1583743814966-8936f37f4678?w=295&h=298&fit=crop&crop=center",
       "title": "Gradient Graphic T-shirt",
       "rating": 3.5,
       "price": 145,
@@ -198,7 +198,7 @@
   "allProducts": [
     {
       "id": 15,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Denim+Jacket",
+      "image": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=295&h=298&fit=crop&crop=center",
       "title": "Classic Denim Jacket",
       "rating": 4.2,
       "price": 189,
@@ -211,7 +211,7 @@
     },
     {
       "id": 16,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Hoodie",
+      "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=295&h=298&fit=crop&crop=center",
       "title": "Oversized Hoodie",
       "rating": 4.7,
       "price": 95,
@@ -226,7 +226,7 @@
     },
     {
       "id": 17,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Chinos",
+      "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=295&h=298&fit=crop&crop=center",
       "title": "Slim Fit Chinos",
       "rating": 4.1,
       "price": 155,
@@ -239,7 +239,7 @@
     },
     {
       "id": 18,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Sweater",
+      "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=295&h=298&fit=crop&crop=center",
       "title": "Cable Knit Sweater",
       "rating": 4.6,
       "price": 220,
@@ -252,7 +252,7 @@
     },
     {
       "id": 19,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Floral+Dress",
+      "image": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=295&h=298&fit=crop&crop=center",
       "title": "Floral Summer Dress",
       "rating": 4.8,
       "price": 185,
@@ -267,7 +267,7 @@
     },
     {
       "id": 20,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Blouse",
+      "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=295&h=298&fit=crop&crop=center",
       "title": "Silk Blouse",
       "rating": 4.4,
       "price": 165,
@@ -280,7 +280,7 @@
     },
     {
       "id": 21,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Maxi+Skirt",
+      "image": "https://images.unsplash.com/photo-1583496661160-fb5886a13d27?w=295&h=298&fit=crop&crop=center",
       "title": "Pleated Maxi Skirt",
       "rating": 4.3,
       "price": 125,
@@ -293,7 +293,7 @@
     },
     {
       "id": 22,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Kids+Tee",
+      "image": "https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?w=295&h=298&fit=crop&crop=center",
       "title": "Kids Rainbow T-shirt",
       "rating": 4.9,
       "price": 45,
@@ -306,7 +306,7 @@
     },
     {
       "id": 23,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Kids+Shorts",
+      "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=295&h=298&fit=crop&crop=center",
       "title": "Kids Denim Shorts",
       "rating": 4.2,
       "price": 35,
@@ -319,7 +319,7 @@
     },
     {
       "id": 24,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Sneakers",
+      "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=295&h=298&fit=crop&crop=center",
       "title": "Classic White Sneakers",
       "rating": 4.6,
       "price": 89,
@@ -334,7 +334,7 @@
     },
     {
       "id": 25,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Running+Shoes",
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=295&h=298&fit=crop&crop=center",
       "title": "Performance Running Shoes",
       "rating": 4.8,
       "price": 145,
@@ -347,7 +347,7 @@
     },
     {
       "id": 26,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Leather+Boots",
+      "image": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=295&h=298&fit=crop&crop=center",
       "title": "Leather Ankle Boots",
       "rating": 4.5,
       "price": 225,
@@ -360,7 +360,7 @@
     },
     {
       "id": 27,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Backpack",
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=295&h=298&fit=crop&crop=center",
       "title": "Canvas Backpack",
       "rating": 4.3,
       "price": 75,
@@ -373,7 +373,7 @@
     },
     {
       "id": 28,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Baseball+Cap",
+      "image": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=295&h=298&fit=crop&crop=center",
       "title": "Classic Baseball Cap",
       "rating": 4.1,
       "price": 25,
@@ -386,7 +386,7 @@
     },
     {
       "id": 29,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Leather+Bag",
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=295&h=298&fit=crop&crop=center",
       "title": "Leather Crossbody Bag",
       "rating": 4.7,
       "price": 135,
@@ -401,7 +401,7 @@
     },
     {
       "id": 30,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Gym+Tank",
+      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=295&h=298&fit=crop&crop=center",
       "title": "Performance Tank Top",
       "rating": 4.4,
       "price": 35,
@@ -414,7 +414,7 @@
     },
     {
       "id": 31,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Yoga+Pants",
+      "image": "https://images.unsplash.com/photo-1506629905607-45e6b5cb8d84?w=295&h=298&fit=crop&crop=center",
       "title": "High-Waist Yoga Leggings",
       "rating": 4.9,
       "price": 65,
@@ -427,7 +427,7 @@
     },
     {
       "id": 32,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Party+Dress",
+      "image": "https://images.unsplash.com/photo-1566479179817-c0ae8e4b4b3b?w=295&h=298&fit=crop&crop=center",
       "title": "Sequin Party Dress",
       "rating": 4.6,
       "price": 195,
@@ -442,7 +442,7 @@
     },
     {
       "id": 33,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Cocktail+Shirt",
+      "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=295&h=298&fit=crop&crop=center",
       "title": "Formal Dress Shirt",
       "rating": 4.5,
       "price": 125,
@@ -455,7 +455,7 @@
     },
     {
       "id": 34,
-      "image": "https://via.placeholder.com/295x298/f0f0f0/666666?text=Party+Blazer",
+      "image": "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=295&h=298&fit=crop&crop=center",
       "title": "Velvet Party Blazer",
       "rating": 4.8,
       "price": 285,
@@ -478,9 +478,9 @@
     "discount": 40,
     "description": "This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
     "images": [
-      "https://via.placeholder.com/400x400/f0f0f0/666666?text=Product+1",
-      "https://via.placeholder.com/400x400/f0f0f0/666666?text=Product+2", 
-      "https://via.placeholder.com/400x400/f0f0f0/666666?text=Product+3"
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=400&h=400&fit=crop&crop=center", 
+      "https://images.unsplash.com/photo-1583743814966-8936f37f4678?w=400&h=400&fit=crop&crop=center"
     ],
     "colors": ["brown", "green", "navy"],
     "sizes": ["Small", "Medium", "Large", "X-Large"],
@@ -492,37 +492,37 @@
     {
       "id": "t-shirts",
       "name": "T-Shirts",
-      "image": "https://via.placeholder.com/200x200/f0f0f0/666666?text=T-Shirts"
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=200&h=200&fit=crop&crop=center"
     },
     {
       "id": "jeans",
       "name": "Jeans",
-      "image": "https://via.placeholder.com/200x200/f0f0f0/666666?text=Jeans"
+      "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=200&h=200&fit=crop&crop=center"
     },
     {
       "id": "shirts",
       "name": "Shirts",
-      "image": "https://via.placeholder.com/200x200/f0f0f0/666666?text=Shirts"
+      "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=200&h=200&fit=crop&crop=center"
     },
     {
       "id": "shorts",
       "name": "Shorts",
-      "image": "https://via.placeholder.com/200x200/f0f0f0/666666?text=Shorts"
+      "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=200&h=200&fit=crop&crop=center"
     },
     {
       "id": "dresses",
       "name": "Dresses",
-      "image": "https://via.placeholder.com/200x200/f0f0f0/666666?text=Dresses"
+      "image": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=200&h=200&fit=crop&crop=center"
     },
     {
       "id": "shoes",
       "name": "Shoes",
-      "image": "https://via.placeholder.com/200x200/f0f0f0/666666?text=Shoes"
+      "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=200&h=200&fit=crop&crop=center"
     },
     {
       "id": "accessories",
       "name": "Accessories",
-      "image": "https://via.placeholder.com/200x200/f0f0f0/666666?text=Accessories"
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=200&h=200&fit=crop&crop=center"
     }
   ]
 }
