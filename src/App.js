@@ -6,6 +6,7 @@ import ProductDetails from './views/ProductDetails';
 import Cart from './views/Cart';
 import Catalog from './views/Catalog';
 import Checkout from './views/Checkout';
+import SearchResults from './views/SearchResults';
 import './App.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path="/catalog" element={<Catalog />} />
             <Route path="/catalog/:category" element={<Catalog />} />
             <Route path="/checkout" element={<Checkout />} />
+            <Route path="/search" element={<SearchResults />} />
           </Routes>
         </Router>
       </CartProvider>

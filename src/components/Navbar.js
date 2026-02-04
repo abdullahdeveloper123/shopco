@@ -5,6 +5,8 @@ import { useCart } from '../context/CartContext';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isShopDropdownOpen, setIsShopDropdownOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [mobileSearchQuery, setMobileSearchQuery] = useState('');
   const dropdownRef = useRef(null);
   const { cartCount } = useCart();
   const navigate = useNavigate();
@@ -20,6 +22,35 @@ const Navbar = () => {
 
   const handleCartClick = () => {
     navigate('/cart');
+  };
+
+  const handleSearch = (query) => {
+    if (query.trim()) {
+      navigate(`/search?q=${encodeURIComponent(query.trim())}`);
+      setIsMenuOpen(false); // Close mobile menu if open
+    }
+  };
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    handleSearch(searchQuery);
+  };
+
+  const handleMobileSearchSubmit = (e) => {
+    e.preventDefault();
+    handleSearch(mobileSearchQuery);
+  };
+
+  const handleSearchKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      handleSearch(searchQuery);
+    }
+  };
+
+  const handleMobileSearchKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      handleSearch(mobileSearchQuery);
+    }
   };
 
   // Close dropdown when clicking outside
@@ -50,22 +81,27 @@ const Navbar = () => {
         <ul className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
           {/* Mobile Search - Only visible in mobile menu */}
           <li className="navbar-item mobile-search">
-            <div className="search-container">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="search-icon">
-                <path 
-                  d="M21 21L16.514 16.506L21 21ZM19 10.5C19 15.194 15.194 19 10.5 19C5.806 19 2 15.194 2 10.5C2 5.806 5.806 2 10.5 2C15.194 2 19 5.806 19 10.5Z" 
-                  stroke="currentColor" 
-                  strokeWidth="2" 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round"
+            <form onSubmit={handleMobileSearchSubmit} className="search-form">
+              <div className="search-container">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="search-icon">
+                  <path 
+                    d="M21 21L16.514 16.506L21 21ZM19 10.5C19 15.194 15.194 19 10.5 19C5.806 19 2 15.194 2 10.5C2 5.806 5.806 2 10.5 2C15.194 2 19 5.806 19 10.5Z" 
+                    stroke="currentColor" 
+                    strokeWidth="2" 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                <input 
+                  type="text" 
+                  placeholder="Search for products..." 
+                  className="search-input"
+                  value={mobileSearchQuery}
+                  onChange={(e) => setMobileSearchQuery(e.target.value)}
+                  onKeyPress={handleMobileSearchKeyPress}
                 />
-              </svg>
-              <input 
-                type="text" 
-                placeholder="Search for products..." 
-                className="search-input"
-              />
-            </div>
+              </div>
+            </form>
           </li>
           
           <li className="navbar-item dropdown" ref={dropdownRef}>
@@ -147,22 +183,27 @@ const Navbar = () => {
 
         {/* Search Bar */}
         <div className="navbar-search">
-          <div className="search-container">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="search-icon">
-              <path 
-                d="M21 21L16.514 16.506L21 21ZM19 10.5C19 15.194 15.194 19 10.5 19C5.806 19 2 15.194 2 10.5C2 5.806 5.806 2 10.5 2C15.194 2 19 5.806 19 10.5Z" 
-                stroke="currentColor" 
-                strokeWidth="2" 
-                strokeLinecap="round" 
-                strokeLinejoin="round"
+          <form onSubmit={handleSearchSubmit} className="search-form">
+            <div className="search-container">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="search-icon">
+                <path 
+                  d="M21 21L16.514 16.506L21 21ZM19 10.5C19 15.194 15.194 19 10.5 19C5.806 19 2 15.194 2 10.5C2 5.806 5.806 2 10.5 2C15.194 2 19 5.806 19 10.5Z" 
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round"
+                />
+              </svg>
+              <input 
+                type="text" 
+                placeholder="Search for products..." 
+                className="search-input"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                onKeyPress={handleSearchKeyPress}
               />
-            </svg>
-            <input 
-              type="text" 
-              placeholder="Search for products..." 
-              className="search-input"
-            />
-          </div>
+            </div>
+          </form>
         </div>
 
         {/* Right Side Icons */}
