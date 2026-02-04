@@ -3799,8 +3799,8 @@ body {
   }
 
   .catalog-products-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 
   .size-options {
