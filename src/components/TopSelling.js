@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import ProductCard from './ProductCard';
 import mockData from '../mock_data.json';
 
-const NewArrivals = () => {
+const TopSelling = () => {
   const [showAll, setShowAll] = useState(false);
   const [allProducts, setAllProducts] = useState([]);
 
   useEffect(() => {
     // Load products from mock data
-    setAllProducts(mockData.newArrivals);
+    setAllProducts(mockData.topSelling);
   }, []);
 
   // Show only 2 products on mobile, 4 on desktop
@@ -21,9 +21,9 @@ const NewArrivals = () => {
   };
 
   return (
-    <section className="new-arrivals">
+    <section className="top-selling">
       <div className="container">
-        <h2 className="section-title">NEW ARRIVALS</h2>
+        <h2 className="section-title">TOP SELLING</h2>
         
         <div className="products-container">
           <div className="products-grid">
@@ -55,4 +55,4 @@ const NewArrivals = () => {
   );
 };
 
-export default NewArrivals;
+export default TopSelling;

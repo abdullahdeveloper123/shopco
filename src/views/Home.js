@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Brands from '../components/Brands';
 import NewArrivals from '../components/NewArrivals';
+import TopSelling from '../components/TopSelling';
 import BrowseByStyle from '../components/BrowseByStyle';
 import CustomerReviews from '../components/CustomerReviews';
 import Footer from '../components/Footer';
@@ -16,6 +17,7 @@ const Home = () => {
       <Hero />
       <Brands />
       <NewArrivals />
+      <TopSelling />
       <BrowseByStyle />
       <CustomerReviews />
       <Footer />

@@ -4,7 +4,6 @@ import ad2 from '../assets/img/h_ad_2.png';
 import ad3 from '../assets/img/h_ad_3.png';
 import ad4 from '../assets/img/h_ad_4.png';
 import ad5 from '../assets/img/h_ad_5.png';
-import './Brands.css'
 
 const Brands = () => {
   const brands = [

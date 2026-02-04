@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './TopNav.css'
 
 const TopNav = () => {
   const [isVisible, setIsVisible] = useState(true);

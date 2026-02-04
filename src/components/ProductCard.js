@@ -1,16 +1,50 @@
 import React from 'react';
-import './ProductCard.css'
-
+import { useNavigate } from 'react-router-dom';
+import { useCart } from '../context/CartContext';
 
 const ProductCard = ({ 
+  id,
   image, 
   title, 
   rating = 4.5, 
   maxRating = 5, 
   price, 
   originalPrice,
-  discount 
+  discount,
+  colors = ['black'],
+  sizes = ['M']
 }) => {
+  const navigate = useNavigate();
+  const { addToCart } = useCart();
+  const [isQuickAdding, setIsQuickAdding] = React.useState(false);
+
+  const handleProductClick = (e) => {
+    // Don't navigate if clicking the add to cart button
+    if (e.target.closest('.quick-add-btn')) {
+      return;
+    }
+    navigate(`/product/${id}`);
+  };
+
+  const handleQuickAdd = (e) => {
+    e.stopPropagation();
+    if (isQuickAdding) return;
+    
+    setIsQuickAdding(true);
+    const product = {
+      id,
+      title,
+      price,
+      image,
+      colors,
+      sizes
+    };
+    addToCart(product, colors[0], sizes[0], 1);
+    
+    setTimeout(() => {
+      setIsQuickAdding(false);
+    }, 1500);
+  };
   // Generate star rating display
   const renderStars = () => {
     const stars = [];
@@ -137,13 +171,18 @@ const ProductCard = ({
   return (
     <div 
       style={cardStyle}
+      onClick={handleProductClick}
       onMouseEnter={(e) => {
         e.currentTarget.style.transform = 'translateY(-5px)';
         e.currentTarget.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.1)';
+        const quickAddBtn = e.currentTarget.querySelector('.quick-add-btn');
+        if (quickAddBtn) quickAddBtn.style.opacity = '1';
       }}
       onMouseLeave={(e) => {
         e.currentTarget.style.transform = 'translateY(0)';
         e.currentTarget.style.boxShadow = 'none';
+        const quickAddBtn = e.currentTarget.querySelector('.quick-add-btn');
+        if (quickAddBtn) quickAddBtn.style.opacity = '0';
       }}
     >
       <div style={imageContainerStyle}>
@@ -161,6 +200,43 @@ const ProductCard = ({
         {discount && (
           <div style={discountBadgeStyle}>-{discount}%</div>
         )}
+        
+        {/* Quick Add Button */}
+        <button 
+          className="quick-add-btn"
+          onClick={handleQuickAdd}
+          disabled={isQuickAdding}
+          style={{
+            position: 'absolute',
+            bottom: '12px',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            backgroundColor: isQuickAdding ? '#4CAF50' : '#000',
+            color: 'white',
+            border: 'none',
+            padding: '8px 16px',
+            borderRadius: '20px',
+            fontSize: '12px',
+            fontWeight: '500',
+            cursor: isQuickAdding ? 'default' : 'pointer',
+            opacity: '0',
+            transition: 'all 0.3s ease',
+            zIndex: 2,
+            minWidth: '80px'
+          }}
+          onMouseEnter={(e) => {
+            if (!isQuickAdding) {
+              e.currentTarget.style.backgroundColor = '#333';
+            }
+          }}
+          onMouseLeave={(e) => {
+            if (!isQuickAdding) {
+              e.currentTarget.style.backgroundColor = '#000';
+            }
+          }}
+        >
+          {isQuickAdding ? 'Added ✓' : 'Quick Add'}
+        </button>
       </div>
       
       <div style={infoStyle}>

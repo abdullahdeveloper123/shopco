@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './Navbar.css'
-
+import { useNavigate } from 'react-router-dom';
+import { useCart } from '../context/CartContext';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isShopDropdownOpen, setIsShopDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const { cartCount } = useCart();
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -14,6 +16,10 @@ const Navbar = () => {
   const toggleShopDropdown = (e) => {
     e.preventDefault();
     setIsShopDropdownOpen(!isShopDropdownOpen);
+  };
+
+  const handleCartClick = () => {
+    navigate('/cart');
   };
 
   // Close dropdown when clicking outside
@@ -70,27 +76,27 @@ const Navbar = () => {
               </svg>
             </a>
             <div className={`dropdown-menu ${isShopDropdownOpen ? 'show' : ''}`}>
-              <a href="/shop/men" className="dropdown-item">Men</a>
-              <a href="/shop/women" className="dropdown-item">Women</a>
-              <a href="/shop/kids" className="dropdown-item">Kids</a>
-              <a href="/shop/accessories" className="dropdown-item">Accessories</a>
-              <a href="/shop/shoes" className="dropdown-item">Shoes</a>
+              <a href="/catalog/men" className="dropdown-item" onClick={(e) => { e.preventDefault(); navigate('/catalog/men'); setIsShopDropdownOpen(false); }}>Men</a>
+              <a href="/catalog/women" className="dropdown-item" onClick={(e) => { e.preventDefault(); navigate('/catalog/women'); setIsShopDropdownOpen(false); }}>Women</a>
+              <a href="/catalog/kids" className="dropdown-item" onClick={(e) => { e.preventDefault(); navigate('/catalog/kids'); setIsShopDropdownOpen(false); }}>Kids</a>
+              <a href="/catalog/accessories" className="dropdown-item" onClick={(e) => { e.preventDefault(); navigate('/catalog/accessories'); setIsShopDropdownOpen(false); }}>Accessories</a>
+              <a href="/catalog/shoes" className="dropdown-item" onClick={(e) => { e.preventDefault(); navigate('/catalog/shoes'); setIsShopDropdownOpen(false); }}>Shoes</a>
             </div>
           </li>
           <li className="navbar-item">
-            <a href="/sale" className="navbar-link">On Sale</a>
+            <a href="/catalog/sale" className="navbar-link" onClick={(e) => { e.preventDefault(); navigate('/catalog/sale'); }}>On Sale</a>
           </li>
           <li className="navbar-item">
-            <a href="/new-arrivals" className="navbar-link">New Arrivals</a>
+            <a href="/catalog/new-arrivals" className="navbar-link" onClick={(e) => { e.preventDefault(); navigate('/catalog/new-arrivals'); }}>New Arrivals</a>
           </li>
           <li className="navbar-item">
-            <a href="/brands" className="navbar-link">Brands</a>
+            <a href="/catalog/brands" className="navbar-link" onClick={(e) => { e.preventDefault(); navigate('/catalog/brands'); }}>Brands</a>
           </li>
 
           {/* Mobile Actions - Only visible in mobile menu */}
           <li className="navbar-item mobile-actions">
             <div className="mobile-action-buttons">
-              <a href="/cart" className="mobile-action-link">
+              <a href="/cart" className="mobile-action-link" style={{ position: 'relative' }} onClick={(e) => { e.preventDefault(); handleCartClick(); }}>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                   <path 
                     d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L4.7 15.3C4.3 15.7 4.6 16.5 5.1 16.5H17M17 13V17C17 18.1 16.1 19 15 19H9C7.9 19 7 18.1 7 17V13M17 13H7" 
@@ -101,6 +107,27 @@ const Navbar = () => {
                   />
                 </svg>
                 <span>Cart</span>
+                {cartCount > 0 && (
+                  <span 
+                    style={{
+                      position: 'absolute',
+                      top: '-5px',
+                      right: '15px',
+                      backgroundColor: '#ff3333',
+                      color: 'white',
+                      borderRadius: '50%',
+                      width: '18px',
+                      height: '18px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontSize: '10px',
+                      fontWeight: 'bold'
+                    }}
+                  >
+                    {cartCount > 99 ? '99+' : cartCount}
+                  </span>
+                )}
               </a>
               <a href="/profile" className="mobile-action-link">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -140,7 +167,7 @@ const Navbar = () => {
 
         {/* Right Side Icons */}
         <div className="navbar-actions">
-          <button className="action-button cart-button">
+          <button className="action-button cart-button" style={{ position: 'relative' }} onClick={handleCartClick}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path 
                 d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L4.7 15.3C4.3 15.7 4.6 16.5 5.1 16.5H17M17 13V17C17 18.1 16.1 19 15 19H9C7.9 19 7 18.1 7 17V13M17 13H7" 
@@ -150,6 +177,28 @@ const Navbar = () => {
                 strokeLinejoin="round"
               />
             </svg>
+            {cartCount > 0 && (
+              <span 
+                style={{
+                  position: 'absolute',
+                  top: '-8px',
+                  right: '-8px',
+                  backgroundColor: '#ff3333',
+                  color: 'white',
+                  borderRadius: '50%',
+                  width: '20px',
+                  height: '20px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: '12px',
+                  fontWeight: 'bold',
+                  minWidth: '20px'
+                }}
+              >
+                {cartCount > 99 ? '99+' : cartCount}
+              </span>
+            )}
           </button>
           <button className="action-button profile-button">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
